@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1688667169 source:/home/masha/cpp/lab3/project/main.cpp
+	<iostream>
+	<vector>
+	<string>
+	<algorithm>
+	"histogram.h"
+
+1688670424 /home/masha/cpp/lab3/project/histogram.h
+	<vector>
+	<algorithm>
+
+1688670572 source:/home/masha/cpp/lab3/project/histogram.cpp
+	"histogram.h"
+	<vector>
+	<algorithm>
+
