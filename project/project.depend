@@ -15,3 +15,16 @@
 	<vector>
 	<algorithm>
 
+3216506 /home/masha/cpp/lab3/project/svg.h 
+    <iostream>
+    <vector>
+    <string>
+    <algorithm>
+
+3216589 /home/masha/cpp/lab3/project/svg.cpp
+    "svg.h"
+    <iostream>
+    <vector>
+    <string>
+    <algorithm>
+
