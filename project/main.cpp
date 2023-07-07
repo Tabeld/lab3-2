@@ -10,7 +10,7 @@ std::vector<size_t> make_histogram(const std::vector<double>& numbers, size_t& b
 std::vector<std::string> input_bins_title(size_t bin_count);
 void scale_histogram(std::vector<size_t>& bins, size_t& max_count, size_t max_length);
 void print_histogram(const std::vector<size_t>& bins, const std::vector <std::string>& bins_title);
-
+void in_for_line(double& dash_length, double& gap_length);
 int main() {
 
     size_t number_count, bin_count;
@@ -34,13 +34,19 @@ int main() {
     auto bins = make_histogram(numbers, bin_count, bins_title);
 
     double dash_length, gap_length;
-    std::cerr << "Enter dash length: ";
-    std::cin >> dash_length;
-    std::cerr << "Enter gap length: ";
-    std::cin >> gap_length;
+    in_for_line(dash_length, gap_length);
 
     show_histogram_svg(bins, bins_title, dash_length, gap_length);
 
+}
+
+void in_for_line(double& dash_length, double& gap_length) {
+std::cerr << "Enter dash length: ";
+    std::cin >> dash_length;
+    std::cerr << "Enter gap length: ";
+    std::cin >> gap_length;
+    if (dash_length<0) dash_length=0;
+    if (gap_length<0) gap_length=0;
 }
 
 std::vector<double> input_numbers(size_t count) {
